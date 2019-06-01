@@ -1,0 +1,12 @@
+micronaut:
+  application:
+    name: swagger-test
+  server:
+    port: 1001
+    cors:
+      enabled: true
+  router:
+    static-resources:
+      swagger:
+        paths: classpath:META-INF/swagger
+        mapping: /swagger/**
