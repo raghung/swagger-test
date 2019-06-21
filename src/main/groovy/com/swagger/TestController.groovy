@@ -31,7 +31,6 @@ class TestController {
     )
     @ApiResponse(responseCode = "400", description = "Invalid Name Supplied")
     @ApiResponse(responseCode = "404", description = "Person not found")
-    //@Tag(name = "greeting")
     Single<String> greetings(@Parameter(description = "Name of the person") @NotBlank String name) {
         return Single.just("Hello $name, How are you doing?")
     }

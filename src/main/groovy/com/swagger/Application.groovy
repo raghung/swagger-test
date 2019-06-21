@@ -24,7 +24,10 @@ import io.swagger.v3.oas.annotations.tags.Tag
         servers = [@Server(
                     url = "http://localhost:1001",
                     description = "Local host"
-                )]
+                ),@Server(
+                    url = "http://dev.sensfix.com",
+                    description = "Dev server"
+        )]
 )
 @CompileStatic
 class Application {
