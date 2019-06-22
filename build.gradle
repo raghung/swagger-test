@@ -36,6 +36,9 @@ dependencies {
     annotationProcessor "io.micronaut.configuration:micronaut-openapi"
     compile "io.swagger.core.v3:swagger-annotations"
     compileOnly "io.micronaut.configuration:micronaut-openapi"
+
+    compile "io.micronaut:micronaut-views"
+    runtime "com.github.jknack:handlebars:4.1.0"
     
     runtime "ch.qos.logback:logback-classic:1.2.3"
     testCompile("org.spockframework:spock-core") {
